@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Run inside the macOS App Sandbox: no access to the user's files,
+         contacts, camera, microphone or other apps. -->
+    <key>com.apple.security.app-sandbox</key>
+    <true/>
+    <!-- Outbound connections only; the app can never listen on a port. -->
+    <key>com.apple.security.network.client</key>
+    <true/>
+    <!-- Read or write a file only when the user picks it in an open/save panel. -->
+    <key>com.apple.security.files.user-selected.read-write</key>
+    <true/>
+</dict>
+</plist>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleName</key>
+    <string>Palisade</string>
+    <key>CFBundleDisplayName</key>
+    <string>Palisade</string>
+    <key>CFBundleIdentifier</key>
+    <string>local.palisade.browser</string>
+    <key>CFBundleExecutable</key>
+    <string>Palisade</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleShortVersionString</key>
+    <string>0.1</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>LSMinimumSystemVersion</key>
+    <string>13.0</string>
+    <key>LSApplicationCategoryType</key>
+    <string>public.app-category.productivity</string>
+    <key>NSPrincipalClass</key>
+    <string>NSApplication</string>
+    <key>NSHighResolutionCapable</key>
+    <true/>
+    <!-- App Transport Security stays on for the app itself. Web content is
+         exempted only so that the user's explicit per-site "allow HTTP"
+         exception and localhost can work; NavigationPolicy enforces HTTPS
+         for everything else. There are deliberately no camera, microphone
+         or location usage strings, so macOS itself refuses those. -->
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoadsInWebContent</key>
+        <true/>
+    </dict>
+</dict>
+</plist>
